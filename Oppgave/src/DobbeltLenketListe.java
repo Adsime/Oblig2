@@ -24,10 +24,6 @@ public class DobbeltLenketListe<T> implements Liste<T>
         }
     }
 
-    public void test() {
-
-    }
-
     // instansvariabler
     private Node<T> hode;          // peker til den første i listen
     private Node<T> hale;          // peker til den siste i listen
@@ -163,6 +159,7 @@ public class DobbeltLenketListe<T> implements Liste<T>
         return "["+s.toString()+"]";
     }
 
+    @Override
     public String omvendtString() {
         StringBuilder s = new StringBuilder();
         Node<T> n = hale;
