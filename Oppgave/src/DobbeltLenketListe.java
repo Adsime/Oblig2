@@ -9,6 +9,7 @@ import java.util.function.Consumer;
 
 public class DobbeltLenketListe<T> implements Liste<T>
 {
+
     private static final class Node<T>   // en indre nodeklasse
     {
         // instansvariabler
@@ -159,7 +160,6 @@ public class DobbeltLenketListe<T> implements Liste<T>
         return "["+s.toString()+"]";
     }
 
-    @Override
     public String omvendtString() {
         StringBuilder s = new StringBuilder();
         Node<T> n = hale;
@@ -225,5 +225,7 @@ public class DobbeltLenketListe<T> implements Liste<T>
         }
 
     } // DobbeltLenketListeIterator
+
+
 
 } // DobbeltLenketListe
